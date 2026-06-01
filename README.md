@@ -4,6 +4,10 @@ Wiki Gamer is a web application for searching and exploring video games using th
 
 The project was developed with HTML, CSS, and Vanilla JavaScript, focusing on API consumption, DOM manipulation, asynchronous requests, and responsive interface design.
 
+# Preview 
+
+[![Wiki Gamer Preview](fotoWiki.png)](fotoWiki.png)
+
 ## Features
 
 * Search games by name
