@@ -1,81 +1,89 @@
 # Wiki Gamer
 
-Wiki Gamer is a web application for searching and exploring video games using the RAWG Video Games Database API.
+O Wiki Gamer é uma aplicação web desenvolvida para pesquisar e explorar informações sobre jogos utilizando a API RAWG Video Games Database.
 
-The project was developed with HTML, CSS, and Vanilla JavaScript, focusing on API consumption, DOM manipulation, asynchronous requests, and responsive interface design.
+O projeto surgiu da combinação entre minha formação em Jogos Digitais e minha transição para o desenvolvimento Front-End, servindo como um laboratório prático para consumo de APIs REST, manipulação de dados e construção de interfaces dinâmicas.
 
-# Preview 
+Mais do que um catálogo de jogos, este projeto demonstra minha capacidade de integrar serviços externos e transformar dados em experiências interativas para o usuário.
+
+# Preview
 
 [![Wiki Gamer Preview](fotoWiki.png)](fotoWiki.png)
 
-## Features
+## Funcionalidades
 
-* Search games by name
-* Display popular games from the RAWG API
-* Dynamic game cards
-* Genre badges on each game
-* Detailed game modal
-* Rating and Metacritic score
-* Release date information
-* Playtime information
-* Developer information
-* Platform information
-* Similar games recommendations
-* Responsive layout
+* Busca de jogos por nome
+* Exibição de jogos populares
+* Cards dinâmicos gerados a partir da API
+* Exibição de gêneros
+* Modal com informações detalhadas
+* Nota dos usuários e Metacritic
+* Data de lançamento
+* Tempo médio de gameplay
+* Desenvolvedora responsável
+* Plataformas disponíveis
+* Recomendações de jogos similares
+* Layout responsivo
 
-## Technologies
+## Tecnologias Utilizadas
 
 * HTML5
 * CSS3
-* JavaScript (ES6+)
-* RAWG Video Games Database API
+* JavaScript
+* REST API (RAWG)
 
-## What I Learned
+## Principais Aprendizados
 
-During this project I practiced:
+Durante o desenvolvimento deste projeto pratiquei:
 
-* Working with REST APIs
-* Fetch API
-* Async/Await
-* DOM Manipulation
-* Event Handling
-* Dynamic Rendering
-* Responsive Design
-* Error Handling
-* Template Literals
-* Array Methods (map, join, slice)
+* Consumo de APIs REST
+* Requisições assíncronas
+* Manipulação do DOM
+* Tratamento de eventos
+* Renderização dinâmica de conteúdo
+* Tratamento de erros
+* Estruturação de interfaces responsivas
+* Organização de código JavaScript
+* Manipulação de arrays e objetos
 
-## API
+## Destaques Técnicos
 
-This project uses the RAWG Video Games Database API.
+* Integração completa com API externa
+* Geração dinâmica de conteúdo a partir de dados recebidos
+* Atualização da interface sem recarregamento da página
+* Estrutura escalável para inclusão de novos filtros e funcionalidades
+* Experiência otimizada para desktop e dispositivos móveis
 
-API Documentation:
+## API Utilizada
 
+RAWG Video Games Database API
+
+Documentação:
 https://rawg.io/apidocs
 
-## Installation
+## Instalação
 
-Clone the repository:
+Clone o repositório:
 
 ```bash
 git clone https://github.com/Phel-lip/wikiGamer.git
 ```
 
-Open the project folder:
+Acesse a pasta:
 
 ```bash
 cd wikiGamer
 ```
 
-Add your RAWG API key inside the JavaScript file:
+Adicione sua chave da API RAWG:
 
 ```javascript
-const API_KEY = "YOUR_API_KEY";
+const API_KEY = "SUA_API_KEY";
 ```
 
-Run the project using a local server or open the `index.html` file in your browser.
+Execute utilizando um servidor local ou abra o arquivo `index.html`.
 
-## Project Structure
+## Estrutura do Projeto
 
 ```text
 wikiGamer
@@ -86,7 +94,13 @@ wikiGamer
 └── README.md
 ```
 
-## Author
+## Sobre o Projeto
+
+Este projeto representa um dos primeiros passos da minha transição de Game Dev para Desenvolvedor Front-End.
+
+A temática de jogos reflete minha formação em Jogos Digitais, enquanto os desafios técnicos envolveram integração com APIs, manipulação de dados e construção de interfaces web modernas.
+
+## Autor
 
 Phellip
 
