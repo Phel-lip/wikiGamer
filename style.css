@@ -1,6 +1,4 @@
-/* =========================
-   RESET
-========================= */
+/* Reset */
 
 *{
     margin:0;
@@ -8,9 +6,7 @@
     box-sizing:border-box;
 }
 
-/* =========================
-   BASE
-========================= */
+/* Base */
 
 body{
     background:#121212;
@@ -27,9 +23,7 @@ li{
     margin-bottom:8px;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* Header */
 
 header{
     padding:2rem;
@@ -49,9 +43,7 @@ header h1{
     margin-bottom:2rem;
 }
 
-/* =========================
-   SEARCH
-========================= */
+/* Search */
 
 #search-form{
     display:flex;
@@ -82,9 +74,7 @@ button{
     margin-bottom:.5rem;
 }
 
-/* =========================
-   MAIN
-========================= */
+/* Main */
 
 main{
     padding:2rem;
@@ -96,9 +86,7 @@ main{
     gap:20px;
 }
 
-/* =========================
-   CARDS
-========================= */
+/* Cards */
 
 .card{
     background:#1d1d1d;
@@ -138,9 +126,7 @@ main{
     font-size:1.2rem;
 }
 
-/* =========================
-   GENRES
-========================= */
+/* Genres */
 
 .genres{
     margin:10px 0;
@@ -155,9 +141,7 @@ main{
     margin-right:5px;
 }
 
-/* =========================
-   MODAL
-========================= */
+/* Modal */
 
 .modal{
     position:fixed;
@@ -211,9 +195,23 @@ main{
     line-height:1.7;
 }
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
+/* Responsividade */
+
+@media (max-width:1024px){
+
+    main{
+        padding:1.5rem;
+    }
+
+    #games-container{
+        grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .modal-content{
+        width:95%;
+    }
+
+}
 
 @media (max-width:768px){
 
