@@ -2,7 +2,7 @@
 
 Aplicação web desenvolvida para pesquisar e explorar informações sobre jogos por meio da API RAWG Video Games Database.
 
-O projeto demonstra consumo de APIs REST, renderização dinâmica de conteúdo e manipulação do DOM para transformar dados externos em uma interface interativa e responsiva.
+Este projeto aprofunda conceitos de JavaScript por meio do consumo de APIs REST, renderização dinâmica de conteúdo e manipulação do DOM para transformar dados externos em uma interface interativa e responsiva.
 
 ## Preview
 
