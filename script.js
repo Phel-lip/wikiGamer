@@ -7,14 +7,10 @@ const modal = document.getElementById("modal");
 const modalBody = document.getElementById("modal-body");
 const closeModalBtn = document.getElementById("close-modal");
 
-/* =========================
-   HELPERS
-========================= */
+/* Helpers */
 
 function mostrarMensagem(texto){
-    container.innerHTML = `
-        <p class="loading">${texto}</p>
-    `;
+    container.innerHTML = `<p class="loading">${texto}</p>`;
 }
 
 function fecharModal(){
@@ -38,9 +34,7 @@ function criarGeneros(generos){
         .join("");
 }
 
-/* =========================
-   JOGOS
-========================= */
+/* Jogos */
 
 async function buscarJogos(){
 
@@ -48,17 +42,13 @@ async function buscarJogos(){
 
         mostrarMensagem("Carregando jogos...");
 
-        const data = await buscarAPI(
-            `https://api.rawg.io/api/games?key=${API_KEY}`
-        );
+        const data = await buscarAPI(`https://api.rawg.io/api/games?key=${API_KEY}`);
 
         renderizarJogos(data.results);
 
     }catch(error){
 
-        container.innerHTML = `
-            <p>Erro ao carregar jogos.</p>
-        `;
+        container.innerHTML = `<p>Erro ao carregar jogos.</p>`;
 
         console.log(error);
     }
@@ -86,31 +76,19 @@ function renderizarJogos(jogos){
 
     container.innerHTML = jogos
         .map(jogo => `
-            <article
-                class="card"
-                onclick="abrirDetalhes(${jogo.id})"
-            >
+            <article class="card" onclick="abrirDetalhes(${jogo.id})">
 
-                <img
-                    src="${jogo.background_image}"
-                    alt="${jogo.name}"
-                >
+                <img src="${jogo.background_image}" alt="${jogo.name}">
 
                 <div class="card-content">
 
                     <h2>${jogo.name}</h2>
 
-                    <div class="genres">
-                        ${criarGeneros(jogo.genres)}
-                    </div>
+                    <div class="genres">${criarGeneros(jogo.genres)}</div>
 
-                    <p>
-                        ⭐ ${jogo.rating}
-                    </p>
+                    <p>⭐ ${jogo.rating}</p>
 
-                    <p>
-                        📅 ${jogo.released}
-                    </p>
+                    <p>📅 ${jogo.released}</p>
 
                 </div>
 
@@ -119,9 +97,7 @@ function renderizarJogos(jogos){
         .join("");
 }
 
-/* =========================
-   MODAL
-========================= */
+/* Modal */
 
 async function abrirDetalhes(id){
 
@@ -146,8 +122,7 @@ async function abrirDetalhes(id){
         modalBody.innerHTML = `
 
             <img
-                src="${jogo.background_image}"
-                style="
+                src="${jogo.background_image}" style="
                     width:100%;
                     border-radius:12px;
                     margin-bottom:20px;
@@ -158,21 +133,13 @@ async function abrirDetalhes(id){
 
             <div class="game-info">
 
-                <p>
-                    ⭐ ${jogo.rating}
-                </p>
+                <p>⭐ ${jogo.rating}</p>
 
-                <p>
-                    🎯 ${jogo.metacritic || "N/A"}
-                </p>
+                <p>🎯 ${jogo.metacritic || "N/A"}</p>
 
-                <p>
-                    📅 ${jogo.released}
-                </p>
+                <p>📅 ${jogo.released}</p>
 
-                <p>
-                    ⏱️ ${jogo.playtime || "N/A"} hours
-                </p>
+                <p>⏱️ ${jogo.playtime || "N/A"} hours</p>
 
                 <p>
                     🛠️ ${
@@ -194,21 +161,15 @@ async function abrirDetalhes(id){
 
             <br>
 
-            <h3>
-                🎮 Similar Games
-            </h3>
+            <h3>🎮 Similar Games</h3>
 
             <br>
 
-            <ul>
-                ${jogosRelacionados}
-            </ul>
+            <ul>${jogosRelacionados}</ul>
 
             <br>
 
-            <p>
-                ${jogo.description_raw}
-            </p>
+            <p>${jogo.description_raw}</p>
 
         `;
 
@@ -220,9 +181,7 @@ async function abrirDetalhes(id){
     }
 }
 
-/* =========================
-   EVENTOS
-========================= */
+/* Eventos */
 
 form.addEventListener("submit", event => {
 
@@ -239,8 +198,6 @@ form.addEventListener("submit", event => {
 
 closeModalBtn.addEventListener("click", fecharModal);
 
-/* =========================
-   INICIALIZAÇÃO
-========================= */
+/* Inicialização */
 
 buscarJogos();
