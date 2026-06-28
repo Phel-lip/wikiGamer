@@ -1,20 +1,30 @@
 # Wiki Gamer
 
-O Wiki Gamer é uma aplicação web desenvolvida para pesquisar e explorar informações sobre jogos utilizando a API RAWG Video Games Database.
+Aplicação web desenvolvida para pesquisar e explorar informações sobre jogos por meio da API RAWG Video Games Database.
 
-O projeto surgiu da combinação entre minha formação em Jogos Digitais e minha transição para o desenvolvimento Front-End, servindo como um laboratório prático para consumo de APIs REST, manipulação de dados e construção de interfaces dinâmicas.
+O projeto demonstra consumo de APIs REST, renderização dinâmica de conteúdo e manipulação do DOM para transformar dados externos em uma interface interativa e responsiva.
 
-Mais do que um catálogo de jogos, este projeto demonstra minha capacidade de integrar serviços externos e transformar dados em experiências interativas para o usuário.
+## Preview
 
-# Preview
+![Preview do projeto](./fotoWiki.png)
 
-[![Wiki Gamer Preview](fotoWiki.png)](fotoWiki.png)
+## Demonstração
+
+Acesse a versão online:
+
+https://phel-lip.github.io/wikiGamer/
+
+## Sobre o Projeto
+
+O Wiki Gamer funciona como um catálogo interativo de jogos, permitindo pesquisar títulos e visualizar informações detalhadas obtidas em tempo real através da API RAWG.
+
+Além da interface, o foco do projeto foi praticar integração com serviços externos, manipulação de dados em JavaScript e atualização dinâmica da página sem recarregamento.
 
 ## Funcionalidades
 
 * Busca de jogos por nome
 * Exibição de jogos populares
-* Cards dinâmicos gerados a partir da API
+* Cards gerados dinamicamente pela API
 * Exibição de gêneros
 * Modal com informações detalhadas
 * Nota dos usuários e Metacritic
@@ -22,7 +32,7 @@ Mais do que um catálogo de jogos, este projeto demonstra minha capacidade de in
 * Tempo médio de gameplay
 * Desenvolvedora responsável
 * Plataformas disponíveis
-* Recomendações de jogos similares
+* Jogos similares
 * Layout responsivo
 
 ## Tecnologias Utilizadas
@@ -30,75 +40,34 @@ Mais do que um catálogo de jogos, este projeto demonstra minha capacidade de in
 * HTML5
 * CSS3
 * JavaScript
-* REST API (RAWG)
+* REST API (RAWG Video Games Database)
 
-## Principais Aprendizados
+## Estrutura do Projeto
 
-Durante o desenvolvimento deste projeto pratiquei:
-
-* Consumo de APIs REST
-* Requisições assíncronas
+* HTML semântico
+* Layout responsivo utilizando CSS
+* Consumo de API com Fetch API
 * Manipulação do DOM
-* Tratamento de eventos
 * Renderização dinâmica de conteúdo
-* Tratamento de erros
-* Estruturação de interfaces responsivas
-* Organização de código JavaScript
-* Manipulação de arrays e objetos
+* Organização do JavaScript em funções por responsabilidade
 
-## Destaques Técnicos
-
-* Integração completa com API externa
-* Geração dinâmica de conteúdo a partir de dados recebidos
-* Atualização da interface sem recarregamento da página
-* Estrutura escalável para inclusão de novos filtros e funcionalidades
-* Experiência otimizada para desktop e dispositivos móveis
-
-## API Utilizada
-
-RAWG Video Games Database API
-
-Documentação:
-https://rawg.io/apidocs
-
-## Instalação
-
-Clone o repositório:
+## Como Executar Localmente
 
 ```bash
 git clone https://github.com/Phel-lip/wikiGamer.git
 ```
 
-Acesse a pasta:
-
-```bash
-cd wikiGamer
-```
-
-Adicione sua chave da API RAWG:
+Adicione sua chave da API RAWG no arquivo `script.js`:
 
 ```javascript
 const API_KEY = "SUA_API_KEY";
 ```
 
-Execute utilizando um servidor local ou abra o arquivo `index.html`.
+Abra o arquivo `index.html` no navegador.
 
-## Estrutura do Projeto
+## Objetivo
 
-```text
-wikiGamer
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
-## Sobre o Projeto
-
-Este projeto representa um dos primeiros passos da minha transição de Game Dev para Desenvolvedor Front-End.
-
-A temática de jogos reflete minha formação em Jogos Digitais, enquanto os desafios técnicos envolveram integração com APIs, manipulação de dados e construção de interfaces web modernas.
+Este projeto foi desenvolvido para praticar integração com APIs REST, manipulação de dados em JavaScript e construção de interfaces dinâmicas consumindo dados de serviços externos.
 
 ## Autor
 
