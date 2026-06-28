@@ -71,7 +71,7 @@ Este projeto foi desenvolvido para praticar integração com APIs REST, manipula
 
 ## Autor
 
-Phellip
+Thasso Holanda
 
 GitHub:
 https://github.com/Phel-lip
